@@ -218,10 +218,6 @@ POST  /api/v1/admin/our-work
 PATCH /api/v1/admin/our-work/{id}
 ```
 
-## Design System
-
-Orbital uses a premium dark visual system called Deep Space.
-
 ### Brand Personality
 
 Orbital should feel like the intersection of:
