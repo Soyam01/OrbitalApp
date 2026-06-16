@@ -481,20 +481,6 @@ The architecture should support later expansion into:
 - AI automation services
 - Voice agent integrations
 
-## Documentation
-
-Source planning documents live in:
-
-```text
-orbital-frontend/docs/
-```
-
-Key documents:
-
-- `AFD.md`: Application flows and user journeys
-- `PRD.md`: Product requirements and launch scope
-- `TRD.md`: Technical architecture and engineering requirements
-- `UIDESIGNBRIEF.md`: Visual design system and UX direction
 
 ## Brand Statement
 
