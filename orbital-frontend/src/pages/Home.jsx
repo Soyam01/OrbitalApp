@@ -165,13 +165,14 @@ function MissionModules() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: '-50px' }}
                 transition={{ duration: 0.6, delay: i * 0.1 }}
+                className="h-full"
               >
                 <Link
                   to={`/services#${service.id}`}
-                  className="group block p-8 md:p-10 border border-border-subtle bg-void/50 hover:bg-midnight/30 transition-all duration-500 relative overflow-hidden"
+                  className="group flex flex-col h-full p-8 md:p-10 border border-border-subtle bg-void/50 hover:bg-midnight/30 transition-all duration-500 relative overflow-hidden"
                 >
                   <div className="absolute inset-0 bg-gradient-to-br from-orbital-blue/3 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                  <div className="relative z-10">
+                  <div className="relative z-10 flex flex-col flex-1">
                     <div className="flex items-center gap-4 mb-6">
                       <div className="w-10 h-10 rounded border border-orbital-blue/20 bg-orbital-blue/5 flex items-center justify-center group-hover:border-orbital-blue/40 group-hover:bg-orbital-blue/10 transition-all duration-500">
                         <Icon size={18} className="text-orbital-blue/60 group-hover:text-orbital-blue transition-colors duration-500" />
@@ -185,10 +186,10 @@ function MissionModules() {
                         </h3>
                       </div>
                     </div>
-                    <p className="text-text-muted text-[15px] leading-relaxed mb-4 group-hover:text-text-muted/80 transition-colors">
+                    <p className="text-text-muted text-[15px] leading-relaxed mb-4 group-hover:text-text-muted/80 transition-colors flex-1">
                       {service.description}
                     </p>
-                    <div className="flex items-center gap-2 text-[11px] font-mono text-orbital-blue/40 group-hover:text-orbital-blue/60 transition-colors">
+                    <div className="flex items-center gap-2 text-[11px] font-mono text-orbital-blue/40 group-hover:text-orbital-blue/60 transition-colors mt-auto">
                       <span>VIEW MODULE</span>
                       <ArrowRight size={12} className="group-hover:translate-x-1 transition-transform" />
                     </div>
