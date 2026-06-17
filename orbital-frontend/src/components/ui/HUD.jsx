@@ -7,7 +7,7 @@ const navItems = [
   { id: 'services', label: 'Modules', path: '/services' },
   { id: 'work', label: 'Missions', path: '/our-work' },
   { id: 'about', label: 'Command', path: '/about' },
-  { id: 'contact', label: 'Transmit', path: '/contact' },
+  { id: 'contact', label: 'Contact', path: '/contact' },
 ];
 
 export default function HUD() {
