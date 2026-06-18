@@ -49,10 +49,10 @@ export default function HUD() {
           animate={{ opacity: 1 }}
           transition={{ duration: 1.5 }}
         >
-          <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-orbital-blue/30 to-transparent" />
-          <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-orbital-blue/30 to-transparent" />
-          <div className="absolute top-0 left-0 bottom-0 w-px bg-gradient-to-b from-transparent via-orbital-blue/20 to-transparent" />
-          <div className="absolute top-0 right-0 bottom-0 w-px bg-gradient-to-b from-transparent via-orbital-blue/20 to-transparent" />
+          <div className="absolute top-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-orbital-blue/30 to-transparent" />
+          <div className="absolute bottom-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-orbital-blue/30 to-transparent" />
+          <div className="absolute top-0 left-0 bottom-0 w-px bg-linear-to-b from-transparent via-orbital-blue/20 to-transparent" />
+          <div className="absolute top-0 right-0 bottom-0 w-px bg-linear-to-b from-transparent via-orbital-blue/20 to-transparent" />
 
           <div className="absolute top-2 left-4 flex items-center gap-4">
             <span className="text-[10px] font-mono text-orbital-blue/60 tracking-[0.2em] uppercase">
