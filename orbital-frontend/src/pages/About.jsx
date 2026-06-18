@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { team, values } from '../data/content';
+import { values } from '../data/content';
+import CommandPersonnel from '../components/three/CommandPersonnelScene';
 import { ArrowRight, Target, Handshake, Lightbulb, Eye, Shield, Zap } from 'lucide-react';
 
 const valueIcons = [Target, Handshake, Lightbulb, Shield];
@@ -126,47 +127,7 @@ export default function About() {
         </div>
       </section>
 
-      <section className="relative py-16 md:py-24 px-6 md:px-10 lg:px-20">
-        <div className="max-w-[1280px] mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: '-50px' }}
-            transition={{ duration: 0.6 }}
-            className="mb-14"
-          >
-            <div className="flex items-center gap-3 mb-3">
-              <span className="w-6 h-px bg-electric-cyan/40" />
-              <span className="text-[11px] font-mono text-electric-cyan/60 tracking-[0.15em] uppercase">Crew Manifest</span>
-            </div>
-            <h2 className="text-[clamp(28px,4vw,44px)] font-bold text-soft-white">Command Personnel</h2>
-          </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-[800px] mx-auto">
-            {team.map((member, i) => (
-              <motion.div
-                key={member.name}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: '-30px' }}
-                transition={{ duration: 0.5, delay: i * 0.1 }}
-                className="group flex items-start gap-5 p-6 border border-border-subtle bg-void/60 hover:bg-midnight/20 transition-all duration-500"
-              >
-                <div className="w-14 h-14 rounded-full border border-orbital-blue/20 bg-orbital-blue/5 flex items-center justify-center shrink-0 group-hover:border-orbital-blue/40 transition-all duration-500">
-                  <span className="text-lg font-bold font-mono text-orbital-blue/40 group-hover:text-orbital-blue/60 transition-colors">
-                    {member.name.split(' ').map((n) => n[0]).join('')}
-                  </span>
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-soft-white">{member.name}</h3>
-                  <p className="text-[11px] font-mono text-electric-cyan/60 tracking-wider uppercase mb-2">{member.role}</p>
-                  <p className="text-text-muted text-sm leading-relaxed">{member.bio}</p>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <CommandPersonnel />
 
       <section className="relative py-32 md:py-40 px-6 md:px-10 lg:px-20">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(27,111,232,0.06)_0%,transparent_70%)]" />
